@@ -1,5 +1,5 @@
-# Portfolio Strategy Analyzer
+# Python for Finance Projects
 
-Python-based financial analysis project using pandas, yfinance, and matplotlib to analyze stock data, returns, volatility, moving averages, cumulative performance, and basic strategy backtesting.
+This repository contains a growing collection of finance and market analysis projects built with Python.
 
-**Status:** In progress — I will continue sharing updates as the project develops.
+The projects focus on financial data visualization, portfolio analysis, quantitative finance concepts, trading strategies, and market analytics using libraries such as pandas, matplotlib, and yfinance.
