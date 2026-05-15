@@ -1,6 +1,6 @@
 #By Emilio Ortiz Cervantes, feel free to connect with me on LinkedIn : https://www.linkedin.com/in/emilioortizcervantes/
 
-#What if you had invested in a certain company many years ago? This project calculates how much that investment would be worth today so you can regret it.
+#What if you had invested in a certain company many years ago? This project calculates how much that investment would be worth today.
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -36,12 +36,17 @@ total_return_percentage = total_return * 100
 
 prices["Investment value"] = prices[ticker] * shares_bought
 
-print(f"Stock's first Price, in {start_date} was {round(start_price,2)} USD")
-print(f"Stock's latest price, in {end_date} was {round(end_price, 2)} USD")
-print(f"You bought {round(shares_bought, 2)} shares in {start_date}")
+print(f"Stock's starting date price, in {start_date} was {round(start_price,2)} USD")
+print(f"Stock's ending date price, in {end_date} was {round(end_price, 2)} USD")
+print(f"You bought {round(shares_bought, 2)} shares in {start_date} with your {investment_amount} USD")
 print(f"The final value was {final_value:,.2f} USD")
 print(f"The profit was {profit:,.2f} USD")
 print(f"Getting an ROI of {total_return_percentage:,.2f} %")
+
+if total_return_percentage > 1:
+    print("Good investment!")
+else:
+    print("Not the best investment")
 
 plt.figure(figsize=(10, 5))
 
