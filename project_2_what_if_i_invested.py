@@ -1,6 +1,6 @@
 #By Emilio Ortiz Cervantes, feel free to connect with me on LinkedIn : https://www.linkedin.com/in/emilioortizcervantes/
 
-# What if you had invested in a certain company many years ago? This project calculates how much that investment would be worth today so you can regret it.
+#What if you had invested in a certain company many years ago? This project calculates how much that investment would be worth today so you can regret it.
 
 import pandas as pd
 import matplotlib.pyplot as plt
