@@ -1,12 +1,11 @@
-#By Emilio Ortiz Cervantes, find me on LinkedIn.
+#By Emilio Ortiz Cervantes, feel free to connect with me on LinkedIn : https://www.linkedin.com/in/emilioortizcervantes/
 
-#importing some data libraries
+#Which company has actually had a better run? This dashboard compares stock performance so the data can talk.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
 from numpy import info
-
-#Downloading companies comparison data and creating useful functions
 
 ticker1 = "AMD"
 ticker2 = "MSFT"
