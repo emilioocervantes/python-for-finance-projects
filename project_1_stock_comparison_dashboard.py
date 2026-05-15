@@ -37,5 +37,4 @@ desired_data = "Low"
 plt.plot(stock1[desired_data], label=(label1))
 plt.plot(stock2[desired_data], label=(label2))
 plt.plot(stock3[desired_data], label=(label3))
-
 plt.legend()
