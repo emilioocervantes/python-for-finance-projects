@@ -13,3 +13,7 @@ Compares the historical stock price performance of selected companies using Pyth
 ### 2. Historical Investment Return Calculator
 
 Calculates how much a past investment in a selected stock would be worth today using historical market data.
+
+### 3. Portfolio Risk & Return Analyzer
+
+Analyzes a custom stock portfolio using historical market data, including cumulative returns, annualized return, volatility, Sharpe ratio, and best/worst performer comparison.
