@@ -17,3 +17,7 @@ Calculates how much a past investment in a selected stock would be worth today u
 ### 3. Portfolio Risk & Return Analyzer
 
 Analyzes a custom stock portfolio using historical market data, including cumulative returns, annualized return, volatility, Sharpe ratio, and best/worst performer comparison.
+
+### 4. Automated DCF Valuation Model
+
+Builds an automated discounted cash flow (DCF) valuation model for public companies using real financial statement data. The project estimates intrinsic share value through revenue forecasting, free cash flow projections, WACC calculation, terminal value estimation, and upside/downside analysis, while also visualizing projected financial performance.
