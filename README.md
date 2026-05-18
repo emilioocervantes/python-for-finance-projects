@@ -4,6 +4,8 @@ This repository contains a growing collection of finance and market analysis pro
 
 The projects focus on financial data visualization, portfolio analysis, quantitative finance concepts, trading strategies, and market analytics using libraries such as pandas, matplotlib, and yfinance.
 
+By Emilio Ortiz Cervantes - https://www.linkedin.com/in/emilioortizcervantes/
+
 ## Projects list
 
 ### 1. Stock Comparison Dashboard
