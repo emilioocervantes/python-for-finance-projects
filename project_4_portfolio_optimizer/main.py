@@ -78,17 +78,12 @@ maximum_sharpe_result = optimize_maximum_sharpe(
 )
 
 if not minimum_volatility_result.success:
-    raise RuntimeError(
-        "Minimum-volatility optimization failed: "
-        f"{minimum_volatility_result.message}"
-    )
+    print("Minimum-volatility optimization failed.")
+    print(minimum_volatility_result.message)
 
 if not maximum_sharpe_result.success:
-    raise RuntimeError(
-        "Maximum-Sharpe optimization failed: "
-        f"{maximum_sharpe_result.message}"
-    )
-
+    print("Maximum-Sharpe optimization failed.")
+    print(maximum_sharpe_result.message)
 
 # Exact minimum-volatility portfolio
 
