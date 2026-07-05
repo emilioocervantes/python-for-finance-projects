@@ -19,3 +19,9 @@ Calculates how much a past investment in a selected stock would be worth today u
 ### 3. Portfolio Risk & Return Analyzer
 
 Analyzes a custom stock portfolio using historical market data, including cumulative returns, annualized return, volatility, Sharpe ratio, and best/worst performer comparison.
+
+### 4. Monte Carlo Portfolio Simulator
+
+Simulates thousands of random portfolio allocations using historical market data to compare expected return, volatility, and Sharpe ratio.
+
+The project identifies the simulated portfolio with the highest Sharpe ratio and the one with the lowest volatility, while generating a risk-return visualization using Python, NumPy, matplotlib, pandas, and yfinance.
