@@ -116,10 +116,10 @@ for ticker, weight in zip(tickers, minimum_volatility_weights):
 
 #Perspective help------------------------------------------------------------------------------------------------
 
-investment_amount = investment_amount * (1 + maximum_sharpe_return) ** investment_timelapse
+investment_amount = investment_amount * (1 + maximum_sharpe_return) ** investment_duration_years
 
 print(
-    f"\nIf you invest ${investment_amount:,.0f} in the maximum Sharpe portfolio, after {investment_timelapse} years you will have ${investment_amount:,.2f}."
+    f"\nIf you invest ${investment_amount:,.0f} in the maximum Sharpe portfolio, after {investment_duration_years} years you will have ${investment_amount:,.2f}."
 )
 
 # Chart----------------------------------------------------------------------------------------------------------
