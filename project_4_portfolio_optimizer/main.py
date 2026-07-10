@@ -16,6 +16,8 @@ tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"]
 start_date = "2021-01-01"
 risk_free_rate = 0.04
 number_of_portfolios = 10000
+investment_amount = 1000000
+investment_duration_years = 5
 
 
 #Market data---------------------------------------------------------------------------------------------------
@@ -112,6 +114,13 @@ print("\nWeights:")
 for ticker, weight in zip(tickers, minimum_volatility_weights):
     print(f"{ticker}: {weight:.2%}")
 
+#Perspective help------------------------------------------------------------------------------------------------
+
+investment_amount = investment_amount * (1 + maximum_sharpe_return) ** investment_timelapse
+
+print(
+    f"\nIf you invest ${investment_amount:,.0f} in the maximum Sharpe portfolio, after {investment_timelapse} years you will have ${investment_amount:,.2f}."
+)
 
 # Chart----------------------------------------------------------------------------------------------------------
 
