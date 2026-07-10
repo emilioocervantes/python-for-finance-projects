@@ -12,12 +12,12 @@ import numpy as np
 
 #User inputs---------------------------------------------------------------------------------------------------
 
-tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"]
+tickers = ["CAT", "KO", "MAR", "HD", "TRV"]
 start_date = "2021-01-01"
 risk_free_rate = 0.04
 number_of_portfolios = 10000
 investment_amount = 1000000
-investment_duration_years = 5
+investment_duration_years = 10
 
 
 #Market data---------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ equal_sharpe = calculate_sharpe_ratio(
     risk_free_rate,
 )
 
-print("\n--- EQUAL-WEIGHT PORTFOLIO ---")
+print("\n--- IN AN EQUAL-WEIGHT PORTFOLIO ---")
 print(f"Expected return: {equal_return:.2%}")
 print(f"Volatility: {equal_volatility:.2%}")
 print(f"Sharpe ratio: {equal_sharpe:.2f}")
@@ -116,11 +116,15 @@ for ticker, weight in zip(tickers, minimum_volatility_weights):
 
 #Perspective help------------------------------------------------------------------------------------------------
 
-investment_amount = investment_amount * (1 + maximum_sharpe_return) ** investment_duration_years
+investment_amount_final = investment_amount * (1 + maximum_sharpe_return) ** investment_duration_years
 
 print(
-    f"\nIf you invest ${investment_amount:,.0f} in the maximum Sharpe portfolio, after {investment_duration_years} years you will have ${investment_amount:,.2f}."
+    f"\nIf you invest ${investment_amount:,.0f} in the maximum sharpe portfolio, considering the expected return over {investment_duration_years} years, you should have ${investment_amount_final:,.2f}."
 )
+
+#Credit----------------------------------------------------------------------------------------------------------
+
+print("\nMade by Emilio Ortiz Cervantes")
 
 # Chart----------------------------------------------------------------------------------------------------------
 
